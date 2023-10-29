@@ -44,7 +44,7 @@ function fetchImages() {
     chrome.storage.sync.get(['numResults'], function(items) {
         const numResults = items.numResults || '15';
         
-        const url = `https://ext.de.cool/pixabay_proxy.php`;
+        const url = `URL_TO_PHP_PROXY.php`;
         fetch(url)
             .then(response => response.json())
             .then(data => {
