@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "ImageFinder",
+    "short_name": "ImageFinder",
+    "version": "1.4",
+    "version_name": "1.4 Stable",
+    "description": "The easiest way to search pictures in any tab. Free, Safe and in the best quality.",
+    "homepage_url": "https://--.de/",
+    "permissions": ["activeTab", "storage"],
+    "host_permissions": ["https://pixabay.com/", "https://pixabay.com/api"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "options_ui": {
+        "page": "settings.html",
+        "open_in_tab": false
+      }
+  }
+  

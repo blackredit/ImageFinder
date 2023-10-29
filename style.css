@@ -1,0 +1,95 @@
+body, html {
+    width: 400px;
+    height: 600px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+#queryInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.clear-icon {
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin-left: 10px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    padding-top: 20px;
+}
+
+.images img {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    animation: fadeInUp 0.5s both;
+}
+
+.load-more {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

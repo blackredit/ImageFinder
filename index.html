@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bildersuche</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="search-bar" id="searchBar">
+            <input type="text" id="queryInput" placeholder="Nach Bildern suchen...">
+            <span id="clearIcon" class="clear-icon">×</span>
+            <div class="loader" id="searchLoader"></div>
+        </div>
+    </header>
+    <main>
+        <div class="images" id="images"></div>
+        <button class="load-more" id="loadMore">Weitere laden</button>
+        <div class="loader" id="loadMoreLoader"></div>
+    </main>
+</body>
+</html>
